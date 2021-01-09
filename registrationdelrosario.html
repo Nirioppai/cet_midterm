@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="POST">
+      <div>
+        <label>First Name</label>
+        <input id="firstname" type="text" />
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input id="lastname" type="text" />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input id="email1" type="email" />
+      </div>
+      <div>
+        <label>Email Confirmation</label>
+        <input onfocusout="emailValidate()" id="email2" type="email" />
+      </div>
+      <div>
+        <label>Age</label>
+        <input id="age" type="number" />
+      </div>
+      <hr />
+
+      <div>
+        <label>Plan</label>
+        <select id="plan">
+          <option selected>Select a plan...</option>
+          <option value="Basic">Basic</option>
+          <option value="Premium">Premium</option>
+          <option value="Titanium">Titanium</option>
+        </select>
+      </div>
+
+      <div>
+        <input id="mailingList" value="Yes" type="checkbox" />
+        <label>Add me to the mailing list.</label>
+      </div>
+      Size:
+      <div>
+        <input type="radio" id="small" name="size" value="Small" />
+        <label for="small">Small</label>
+
+        <input type="radio" id="medium" name="size" value="Medium" />
+        <label for="medium">Medium</label>
+
+        <input type="radio" id="large" name="size" value="Large" />
+        <label for="large">Large</label>
+      </div>
+
+      <button type="button" onclick="dataProcess()">Submit</button>
+
+      <p id="demo"></p>
+    </form>
+    <script src="./registration.js"></script>
+  </body>
+</html>
