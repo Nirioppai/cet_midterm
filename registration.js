@@ -23,7 +23,7 @@ function emailValidate() {
 
 //Export JSON
 
-var saveJSON = function (obj) {
+function saveJSON(obj) {
   var str = JSON.stringify(JSON.parse(obj));
   var data = encode(str);
 
@@ -54,7 +54,7 @@ var saveJSON = function (obj) {
     null
   );
   link.dispatchEvent(event);
-};
+}
 
 var encode = function (s) {
   var out = [];
