@@ -1,0 +1,73 @@
+body{
+    
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://p4.wallpaperbetter.com/wallpaper/252/1017/196/anime-megumin-kono-subarashii-sekai-ni-shukufuku-wo-wallpaper-preview.jpg");
+}
+
+.content{
+    background-color: white;
+    display: flex;
+}
+
+h1{
+    font-size: 32pt;
+    color: red;
+}
+
+.row {
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: calc(var(--bs-gutter-y) * -1);
+	margin-right: calc(var(--bs-gutter-x)/ -2);
+	margin-left: calc(var(--bs-gutter-x)/ -2)
+}
+
+.row>* {
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+	padding-right: calc(var(--bs-gutter-x)/ 2);
+	padding-left: calc(var(--bs-gutter-x)/ 2);
+	margin-top: var(--bs-gutter-y)
+}
+
+.col {
+    flex: 1 0 0%;
+    width: 400px;
+}
+
+.row-cols-auto>* {
+	flex: 0 0 auto;
+	width: auto
+}
+
+.row-cols-1>* {
+	flex: 0 0 auto;
+	width: 100%
+}
+
+.row-cols-2>* {
+	flex: 0 0 auto;
+	width: 50%
+}
+
+.row-cols-3>* {
+	flex: 0 0 auto;
+	width: 33.3333333333%
+}
+
+.row-cols-4>* {
+	flex: 0 0 auto;
+	width: 25%
+}
+
+.row-cols-5>* {
+	flex: 0 0 auto;
+	width: 20%
+}
+
+.row-cols-6>* {
+	flex: 0 0 auto;
+	width: 16.6666666667%
+}
